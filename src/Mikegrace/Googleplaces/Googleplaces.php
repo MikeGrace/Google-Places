@@ -2,9 +2,6 @@
 
 
 class Googleplaces {
-	public static function ping() {
-		return 'pong';
-	}
 
     const OK_STATUS = 'OK';
 
@@ -335,6 +332,10 @@ class Googleplaces {
     /***********************
      * Getters and Setters *
      ***********************/
+
+    public function setApiKey($key) {
+        $this->_apiKey = $key;
+    }
 
     public function setLocation($location) {
         $this->_location = $location;
